@@ -1,7 +1,6 @@
 //FOOTER ICONS
 import whatsapp from "../assets/whatsapp.png";
 import mobile from "../assets/tele.png";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -38,9 +37,9 @@ const Footer = () => {
                 ipsa ipsam est nemo.
               </p>
               <div className="flex justify-center">
-                <Link to="https://api.whatsapp.com/send/?phone=%2B916383570296&text=Hi+%22RepairService%22+%2C+I+Need+Your+Services+Today&type=phone_number&app_absent=0" className="mt-3.5   bg-yellow-300 text-black font-bold p-1  rounded">
+                <a href="https://api.whatsapp.com/send/?phone=%2B916383570296&text=Hi+%22RepairService%22+%2C+I+Need+Your+Services+Today&type=phone_number&app_absent=0" className="mt-3.5   bg-yellow-300 text-black font-bold p-1  rounded">
                   Message Us
-                </Link>
+                </a>
               </div>
             </div>
           </div>

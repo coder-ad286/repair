@@ -101,7 +101,7 @@ const Header = () => {
                 <ScrollLink
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-230}
                   duration={1500}
                   to="services"
                   onClick={() => {
@@ -120,17 +120,18 @@ const Header = () => {
                 <Link to={"/about"}>About</Link>
               </li>
               <li
-                onClick={() => {
-                  setOpen(!open);
-                }}
+                
                 className="my-3 mx-auto hover:bg-black hover:text-white rounded px-5 text-center"
               >
                 <ScrollLink
                   spy={true}
                   smooth={true}
-                  offset={-50}
+                  offset={-230}
                   duration={1500}
                   to="contact"
+                  onClick={() => {
+                    setOpen(!open);
+                  }}
                 >
                   Contact
                 </ScrollLink>

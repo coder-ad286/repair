@@ -6,34 +6,38 @@ import img4 from "../assets/images/img8.jpg";
 
 
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+const data = [
+  {
+    id: 1,
+    title: "Carpentry",
+    image: img1,
+    tag: "Quality",
+  },
+  {
+    id: 2,
+    title: "Flooring",
+    image: img4,
+    tag: "Trust",
+  },
+  {
+    id: 3,
+    title: "Painting",
+    image: img3,
+    tag: "Affordable",
+  },
+  {
+    id: 4,
+    title: "Electrical Work",
+    image: img2,
+    tag: "Staisfaction",
+  },
+];
 
 const Service = () => {
-  const data = [
-    {
-      id: 1,
-      title: "Carpentry",
-      image: img1,
-      tag: "Quality",
-    },
-    {
-      id: 2,
-      title: "Flooring",
-      image: img4,
-      tag: "Trust",
-    },
-    {
-      id: 3,
-      title: "Painting",
-      image: img3,
-      tag: "Affordable",
-    },
-    {
-      id: 4,
-      title: "Electrical Work",
-      image: img2,
-      tag: "Staisfaction",
-    },
-  ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   const { id } = useParams();
   const serviceData = data[id - 1];

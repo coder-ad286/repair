@@ -1,6 +1,9 @@
-import React from "react";
+import {useEffect} from "react";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [])
   return (
     <main id="about" className="bg-yellow-400  z-20">
       <section className="container  pt-1 pb-10   px-10 mx-auto">
@@ -30,7 +33,7 @@ const About = () => {
             <div>
               <h4 className="font-bold text-xl">Friendly</h4>
               <p className="font-bold text-sm mt-2 text-gray-300">
-                
+
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
                 iure! Quasi ut adipisci maxime totam earum culpa ratione hic
                 eius odio, magni excepturi quaerat neque consectetur. Veritatis
@@ -42,7 +45,7 @@ const About = () => {
             <div>
               <h4 className="font-bold text-xl">Proffessional</h4>
               <p className="font-bold text-sm mt-2 text-gray-800 sm:text-gray-300">
-                
+
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
                 iure! Quasi ut adipisci maxime totam earum culpa ratione hic
                 eius odio, magni excepturi quaerat neque consectetur. Veritatis
@@ -54,7 +57,7 @@ const About = () => {
             <div>
               <h4 className="font-bold text-xl">Care</h4>
               <p className="font-bold text-sm mt-2 text-gray-800">
-                
+
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
                 iure! Quasi ut adipisci maxime totam earum culpa ratione hic
                 eius odio, magni excepturi quaerat neque consectetur. Veritatis
